@@ -73,26 +73,6 @@ class Thread extends Eloquent
     }
 
     /**
-     * Returns the user object that created the thread.
-     *
-     * @return mixed
-     */
-    public function creator()
-    {
-        return $this->messages()->oldest()->first()->user;
-    }
-
-    /**
-     * Returns all of the latest threads by updated_at date.
-     *
-     * @return mixed
-     */
-    public static function getAllLatest()
-    {
-        return self::latest('updated_at');
-    }
-
-    /**
      * Returns all threads by subject.
      *
      * @return mixed
