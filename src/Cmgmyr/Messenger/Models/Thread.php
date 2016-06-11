@@ -91,7 +91,7 @@ class Thread extends Eloquent
      */
     public function participantsUserIds($userId = null)
     {
-        $users = $this->participants()->withTrashed()->lists('user_id');
+        $users = $this->participants()->lists('user_id');
 
         if ($userId) {
             $users[] = $userId;
@@ -228,14 +228,14 @@ class Thread extends Eloquent
     }
 
     /**
-     * Get Participants User Model
-     *
-     * @return mixed
+     * Restores all participants within a thread that has a new message.
      */
-    public function getParticipantsUserModel()
+    public function activateAllParticipants()
     {
-        $user_id_lists =  $this->participants()->lists('user_id');
-        return Models::table('users')->whereIn('id', $user_id_lists)->get();
+        $participants = $this->participants()->withTrashed()->get();
+        foreach ($participants as $participant) {
+            $participant->restore();
+        }
     }
 
     /**
