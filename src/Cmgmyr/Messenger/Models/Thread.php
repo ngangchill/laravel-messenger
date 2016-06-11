@@ -248,14 +248,14 @@ class Thread extends Eloquent
     }
 
     /**
-     * Restores all participants within a thread that has a new message.
+     * Get Participants User Model
+     *
+     * @return mixed
      */
-    public function activateAllParticipants()
+    public function getParticipantsUserModel()
     {
-        $participants = $this->participants()->withTrashed()->get();
-        foreach ($participants as $participant) {
-            $participant->restore();
-        }
+        $user_id_lists =  $this->participants()->lists('user_id');
+        return Models::table('users')->whereIn('id', $user_id_lists)->get();
     }
 
     /**
