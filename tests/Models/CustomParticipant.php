@@ -1,8 +1,8 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test\Models;
+namespace yukkomeister\Messenger\Test\Models;
 
-use Cmgmyr\Messenger\Models\Message;
+use yukkomeister\Messenger\Models\Message;
 
 class CustomParticipant extends Message
 {

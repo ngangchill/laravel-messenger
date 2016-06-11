@@ -1,6 +1,6 @@
 <?php
 
-use Cmgmyr\Messenger\Models\Models;
+use yukkomeister\Messenger\Models\Models;
 use Illuminate\Database\Migrations\Migration;
 
 class AddNullableToLastReadInParticipantsTable extends Migration

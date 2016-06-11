@@ -1,6 +1,6 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test;
+namespace yukkomeister\Messenger\Test;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

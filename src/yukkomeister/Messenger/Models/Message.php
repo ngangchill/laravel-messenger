@@ -1,6 +1,6 @@
 <?php
 
-namespace Cmgmyr\Messenger\Models;
+namespace yukkomeister\Messenger\Models;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model as Eloquent;

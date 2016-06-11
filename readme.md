@@ -1,15 +1,15 @@
-[![Build Status](https://img.shields.io/travis/cmgmyr/laravel-messenger.svg?style=flat-square)](https://travis-ci.org/cmgmyr/laravel-messenger)
-[![Code Climate](https://img.shields.io/codeclimate/github/cmgmyr/laravel-messenger.svg?style=flat-square)](https://codeclimate.com/github/cmgmyr/laravel-messenger)
-[![Latest Version](https://img.shields.io/github/release/cmgmyr/laravel-messenger.svg?style=flat-square)](https://github.com/cmgmyr/laravel-messenger/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/cmgmyr/messenger.svg?style=flat-square)](https://packagist.org/packages/cmgmyr/messenger)
+[![Build Status](https://img.shields.io/travis/yukkomeister/laravel-messenger.svg?style=flat-square)](https://travis-ci.org/yukkomeister/laravel-messenger)
+[![Code Climate](https://img.shields.io/codeclimate/github/yukkomeister/laravel-messenger.svg?style=flat-square)](https://codeclimate.com/github/yukkomeister/laravel-messenger)
+[![Latest Version](https://img.shields.io/github/release/yukkomeister/laravel-messenger.svg?style=flat-square)](https://github.com/yukkomeister/laravel-messenger/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/yukkomeister/messenger.svg?style=flat-square)](https://packagist.org/packages/yukkomeister/messenger)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/cmgmyr)
+[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/yukkomeister)
 
 # Laravel Messenger
 This package will allow you to add a full user messaging system into your Laravel application.
 
 ## Leave some feedback
-[How are you using laravel-messenger?](https://github.com/cmgmyr/laravel-messenger/issues/55)
+[How are you using laravel-messenger?](https://github.com/yukkomeister/laravel-messenger/issues/55)
 
 ## Features
 * Multiple conversations per user
@@ -25,13 +25,13 @@ This package will allow you to add a full user messaging system into your Larave
 * One to one messaging (private or direct thread)
 
 ## Installation (Laravel 4.x)
-Installation instructions for Laravel 4 can be [found here](https://github.com/cmgmyr/laravel-messenger/tree/v1).
+Installation instructions for Laravel 4 can be [found here](https://github.com/yukkomeister/laravel-messenger/tree/v1).
 
 ## Installation (Laravel 5.x)
 In composer.json:
 
     "require": {
-        "cmgmyr/messenger": "~2.0"
+        "yukkomeister/messenger": "~2.0"
     }
 
 Run:
@@ -41,18 +41,18 @@ Run:
 Add the service provider to `config/app.php` under `providers`:
 
     'providers' => [
-        Cmgmyr\Messenger\MessengerServiceProvider::class,
+        yukkomeister\Messenger\MessengerServiceProvider::class,
     ]
 
 Publish Assets
 
-    php artisan vendor:publish --provider="Cmgmyr\Messenger\MessengerServiceProvider"
+    php artisan vendor:publish --provider="yukkomeister\Messenger\MessengerServiceProvider"
 	
 Update config file to reference your User Model:
 
     config/messenger.php
 	
-Create a `users` table if you do not have one already. If you need one, simply use [this example](https://github.com/cmgmyr/laravel-messenger/tree/master/src/Cmgmyr/Messenger/examples/create_users_table.php) as a starting point, then migrate.
+Create a `users` table if you do not have one already. If you need one, simply use [this example](https://github.com/yukkomeister/laravel-messenger/tree/master/src/yukkomeister/Messenger/examples/create_users_table.php) as a starting point, then migrate.
 
 **(Optional)** Define names of database tables in package config file if you don't want to use default ones:
 
@@ -66,7 +66,7 @@ Migrate your database:
 
 Add the trait to your user model:
 
-    use Cmgmyr\Messenger\Traits\Messagable;
+    use yukkomeister\Messenger\Traits\Messagable;
     
     class User extends Model {
         use Messagable;
@@ -74,15 +74,15 @@ Add the trait to your user model:
 
 
 ## Examples
-* [Controller](https://github.com/cmgmyr/laravel-messenger/tree/master/src/Cmgmyr/Messenger/examples/MessagesController.php)
-* [Routes](https://github.com/cmgmyr/laravel-messenger/tree/master/src/Cmgmyr/Messenger/examples/routes.php)
-* [Views](https://github.com/cmgmyr/laravel-messenger/tree/master/src/Cmgmyr/Messenger/examples/views)
+* [Controller](https://github.com/yukkomeister/laravel-messenger/tree/master/src/yukkomeister/Messenger/examples/MessagesController.php)
+* [Routes](https://github.com/yukkomeister/laravel-messenger/tree/master/src/yukkomeister/Messenger/examples/routes.php)
+* [Views](https://github.com/yukkomeister/laravel-messenger/tree/master/src/yukkomeister/Messenger/examples/views)
 
 __Note:__ These examples use the [laravelcollective/html](http://laravelcollective.com/docs/5.0/html) package that is no longer included in Laravel 5 out of the box. Make sure you require this dependency in your `composer.json` file if you intend to use the example files.
 
 ## Example Projects
-* [WIP] [Pusher](https://github.com/cmgmyr/laravel-messenger-pusher-demo)
-* [WIP] [Lumen API](https://github.com/cmgmyr/lumen-messenger-api)
+* [WIP] [Pusher](https://github.com/yukkomeister/laravel-messenger-pusher-demo)
+* [WIP] [Lumen API](https://github.com/yukkomeister/lumen-messenger-api)
 
 
 ## Contributing? 
@@ -92,11 +92,11 @@ Please format your code before creating a pull-request. This will format all fil
 
 ## Security
 
-If you discover any security related issues, please email [Chris Gmyr](mailto:cmgmyr@gmail.com) instead of using the issue tracker.
+If you discover any security related issues, please email [Chris Gmyr](mailto:yukkomeister@gmail.com) instead of using the issue tracker.
 
 ## Credits
 
-- [Chris Gmyr](https://github.com/cmgmyr)
+- [Chris Gmyr](https://github.com/yukkomeister)
 - [All Contributors](../../contributors)
 
 ### Special Thanks

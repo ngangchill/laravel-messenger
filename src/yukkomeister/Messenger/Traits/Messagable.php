@@ -1,11 +1,11 @@
 <?php
 
-namespace Cmgmyr\Messenger\Traits;
+namespace yukkomeister\Messenger\Traits;
 
-use Cmgmyr\Messenger\Models\Message;
-use Cmgmyr\Messenger\Models\Models;
-use Cmgmyr\Messenger\Models\Participant;
-use Cmgmyr\Messenger\Models\Thread;
+use yukkomeister\Messenger\Models\Message;
+use yukkomeister\Messenger\Models\Models;
+use yukkomeister\Messenger\Models\Participant;
+use yukkomeister\Messenger\Models\Thread;
 
 trait Messagable
 {

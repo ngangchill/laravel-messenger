@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-0": {
-            "Cmgmyr\\Messenger\\": "src/"
+            "yukkomeister\\Messenger\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cmgmyr\\Messenger\\Test\\": "tests/"
+            "yukkomeister\\Messenger\\Test\\": "tests/"
         }
     },
     "minimum-stability": "stable"

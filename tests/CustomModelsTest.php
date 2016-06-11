@@ -1,14 +1,14 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test;
+namespace yukkomeister\Messenger\Test;
 
-use Cmgmyr\Messenger\Models\Message;
-use Cmgmyr\Messenger\Models\Models;
-use Cmgmyr\Messenger\Models\Participant;
-use Cmgmyr\Messenger\Models\Thread;
-use Cmgmyr\Messenger\Test\Models\CustomMessage;
-use Cmgmyr\Messenger\Test\Models\CustomParticipant;
-use Cmgmyr\Messenger\Test\Models\CustomThread;
+use yukkomeister\Messenger\Models\Message;
+use yukkomeister\Messenger\Models\Models;
+use yukkomeister\Messenger\Models\Participant;
+use yukkomeister\Messenger\Models\Thread;
+use yukkomeister\Messenger\Test\Models\CustomMessage;
+use yukkomeister\Messenger\Test\Models\CustomParticipant;
+use yukkomeister\Messenger\Test\Models\CustomThread;
 
 class CustomModelsTest extends TestCase
 {

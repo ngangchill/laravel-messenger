@@ -1,11 +1,11 @@
 <?php
 
-namespace Cmgmyr\Messenger;
+namespace yukkomeister\Messenger;
 
-use Cmgmyr\Messenger\Models\Message;
-use Cmgmyr\Messenger\Models\Models;
-use Cmgmyr\Messenger\Models\Participant;
-use Cmgmyr\Messenger\Models\Thread;
+use yukkomeister\Messenger\Models\Message;
+use yukkomeister\Messenger\Models\Models;
+use yukkomeister\Messenger\Models\Participant;
+use yukkomeister\Messenger\Models\Thread;
 use Illuminate\Support\ServiceProvider;
 
 class MessengerServiceProvider extends ServiceProvider
@@ -18,8 +18,8 @@ class MessengerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            base_path('vendor/cmgmyr/messenger/src/config/config.php') => config_path('messenger.php'),
-            base_path('vendor/cmgmyr/messenger/src/migrations') => base_path('database/migrations'),
+            base_path('vendor/yukkomeister/messenger/src/config/config.php') => config_path('messenger.php'),
+            base_path('vendor/yukkomeister/messenger/src/migrations') => base_path('database/migrations'),
         ]);
 
         $this->setMessengerModels();
@@ -34,7 +34,7 @@ class MessengerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            base_path('vendor/cmgmyr/messenger/src/config/config.php'), 'messenger'
+            base_path('vendor/yukkomeister/messenger/src/config/config.php'), 'messenger'
         );
     }
 

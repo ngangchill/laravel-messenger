@@ -1,6 +1,6 @@
 <?php
 
-namespace Cmgmyr\Messenger\Test;
+namespace yukkomeister\Messenger\Test;
 
 date_default_timezone_set('America/New_York');
 
@@ -40,9 +40,9 @@ class TestCase extends Orchestra
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('messenger.message_model', 'Cmgmyr\Messenger\Models\Message');
-        $app['config']->set('messenger.participant_model', 'Cmgmyr\Messenger\Models\Participant');
-        $app['config']->set('messenger.thread_model', 'Cmgmyr\Messenger\Models\Thread');
+        $app['config']->set('messenger.message_model', 'yukkomeister\Messenger\Models\Message');
+        $app['config']->set('messenger.participant_model', 'yukkomeister\Messenger\Models\Participant');
+        $app['config']->set('messenger.thread_model', 'yukkomeister\Messenger\Models\Thread');
     }
 
     /**
